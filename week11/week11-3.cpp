@@ -1,0 +1,44 @@
+#include <stdio.h> /// https://www.youtube.com/watch?v=lyZQPjUT5B4
+int a[10]={3,0,1,8,7,2,5,4,6,9};
+
+int main()
+{
+    for(int i=0;i<10;i++)printf("%d ",a[i]);
+    printf("\n");
+///--------------------------------------------
+    for(int i=0;i<10-1;i++)
+    {
+        if(a[i] > a[i+1])
+        {
+            int temp=a[i+1];
+            a[i+1]=a[i];
+            a[i]=temp;
+        }
+    }
+    for(int i=0; i<10; i++)printf("%d ", a[i]);
+    printf("\n");
+///--------------------------------------------
+    for(int i=0;i<10-1;i++)
+    {
+        if(a[i] > a[i+1])
+        {
+            int temp=a[i+1];
+            a[i+1]=a[i];
+            a[i]=temp;
+        }
+    }
+    for(int i=0; i<10; i++)printf("%d ", a[i]);
+    printf("\n");
+    ///--------------------------------------------
+    for(int i=0;i<10-1;i++)
+    {
+        if(a[i] > a[i+1])
+        {
+            int temp=a[i+1];
+            a[i+1]=a[i];
+            a[i]=temp;
+        }
+    }
+    for(int i=0; i<10; i++)printf("%d ", a[i]);
+    printf("\n");
+}
